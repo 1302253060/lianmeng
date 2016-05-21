@@ -131,6 +131,7 @@ class SoftController extends BaseController {
 
         $Soft->content = html_entity_decode($Soft->content);
         $Soft->config = json_encode($this->getConfigTidy($Soft->config));
+        $Soft->update_time = date('Y-m-d H:i:s');
 
         if (!empty($Soft->id)) {
             $this->fail('参数错误');
@@ -154,6 +155,7 @@ class SoftController extends BaseController {
 
         $Soft->content = html_entity_decode($Soft->content);
         $Soft->config = json_encode($this->getConfigTidy($Soft->config));
+        $Soft->update_time = date('Y-m-d H:i:s');
 
         if (empty($Soft->id)) {
             $this->fail('参数ID错误');
