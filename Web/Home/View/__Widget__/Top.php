@@ -24,7 +24,7 @@
             <?php
             $head_nav = array(
                 'Index' => array('name' => '首页', 'link' => '/'),
-                'Packet' => array('name' => '推广软件', 'link' => '/Home/packet/'),
+                'Packet' => array('name' => '推广软件', 'link' => '/Home/packet/?type=app'),
                 'Anno' => array('name' => '联盟公告', 'link' => '/Home/anno/'),
                 'Help' => array('name' => '帮助中心', 'link' => '/Home/help/'),
                 'User' => array('name' => '账户中心', 'link' => '/Home/userearn/last/'),

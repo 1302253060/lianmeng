@@ -97,7 +97,7 @@
 
             <div class="block-title clearfix">
                 <div class="title">软件推广</div>
-                <a class="right" href="/Home/packet/">更多</a>
+                <a class="right" href="/Home/packet/?type=app">更多</a>
             </div>
 
             <div class="promote-res clearfix">

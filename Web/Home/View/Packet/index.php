@@ -1,7 +1,7 @@
 <div class="main-content-body soft-list layout">
     <ul class="packet-soft-list-top">
-        <li><a class="packet-soft-list-top-padding <?php if ($type == 'pc') { echo "packet-soft-list-top-active"; }?>" href="/Home/packet/?type=pc">PC端推广软件</a></li>
         <li><a class="packet-soft-list-top-padding <?php if ($type == 'app') { echo "packet-soft-list-top-active"; }?>" href="/Home/packet/?type=app">移动端推广软件</a></li>
+        <li><a class="packet-soft-list-top-padding <?php if ($type == 'pc') { echo "packet-soft-list-top-active"; }?>" href="/Home/packet/?type=pc">PC端推广软件</a></li>
     </ul>
     <table class="table">
         <thead>
