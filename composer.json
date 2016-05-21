@@ -1,0 +1,23 @@
+{
+    "name": "thinkphp/lianmeng",
+    "description": "lianmeng",
+    "require": {
+        "topthink/thinkphp": "3.2.2",
+        "phpoffice/phpexcel": "1.8.0",
+        "phpmailer/phpmailer": "5.2.7"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/top-think/thinkphp.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/PHPOffice/PHPExcel.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/PHPMailer/PHPMailer.git"
+        }
+    ]
+}

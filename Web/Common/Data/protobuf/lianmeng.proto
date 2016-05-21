@@ -1,0 +1,24 @@
+message ExtendedInfo
+{
+    required string key = 1; // 其他信息key（计算机名、壳所在路径，后续可扩展）
+    required string value = 2; // 其他信息对应的value
+}
+
+message Info
+{
+    required int64 channel_id = 1; // 渠道id
+    required string soft_name = 2; // 加壳的软件
+    required string unique_code = 3; // 机器唯一标示
+	required int64 os_major_ver = 4; // 系统major version
+    required int64 os_minor_ver = 5; // 系统minor version
+	required int64 os_bit = 6;	// 32位/64位系统
+    required string mac = 7; // 电脑mac地址
+    repeated string cpu = 8; // cpu串号
+    repeated string hard_disk = 9; // 硬盘串号
+    required string mainboard = 10; // 主板信息
+    required string version = 11; // 壳的版本号
+    required int64 virtual_machine = 12; // 虚拟机信息 0不是虚拟机
+    repeated ExtendedInfo other_text = 13; // 其他信息（计算机名、壳所在路径，后续可扩展）
+    required string secret_key = 14; // 生成密钥
+    required int64 time = 15; // 当前时间戳，当时间戳大于30s链接失效
+}

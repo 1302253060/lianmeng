@@ -1,0 +1,94 @@
+@charset utf-8;
+.content.freeze ,
+.content.channelAppeal { padding: 23px 30px; padding-bottom: 100px; }
+.content.channelAppeal{ padding: 23px 30px; padding-bottom: 250px; }
+.content.channelAppeal .headline { margin: 10px auto; }
+.content.channelAppeal .stats span { display: inline-block; margin: auto 3px; }
+.content.channelAppeal .passPercent { font-weight: bold; font-size: 14px; text-align: right; }
+.content.channelAppeal .showTips { background-image: url('../../../img/question.png'); display: inline-block; width: 16px; height: 16px; }
+.content.channelAppeal .showTips:hover { background-image: url('../../../img/question_1.png'); }
+.content.freeze .freeze-body.singleInfo { margin-top: 0; }
+.freeze .freeze-body { background-color: #fafafa; padding: 10px 20px; border: 1px solid #e4e4e4; }
+.freeze-body .line { margin: 5px 0; word-break: break-all !important; }
+.freeze .freeze-body .title { font-size: 16px; font-weight: bold; color: #333333; }
+.freeze-body .warning { color: #f8530a; font-size: 14px; }
+.appeal-btn { font-size: 16px; padding: 5px 30px; display: inline-block; margin-top: 20px; color: #FFF; *padding: 5px 12px; }
+.appeal-btn.submit,
+.appeal-btn.toappeal { background-color: #e5bb00; }
+.appeal-btn.appealing { background-color: #DFDFDF; color: #707070; cursor: default; }
+.appeal-btn.cancel { background-color: #b3b3b3; margin-left: 18px; }
+.appeal-btn:hover{ text-decoration: underline; }
+button.appeal-btn.submit {border-radius: 0; padding-top: 0; padding: auto 10px; width: auto; cursor: pointer; outline: none; margin-left: 0; }
+.appeal-btn.appealing:hover { text-decoration: none; }
+
+/*申诉*/
+.appeal .freeze-body .title { margin-bottom: 25px; }
+.appeal { color: #333333; padding: 30px 30px 50px; }
+.appeal .msg { display: inline-block; width: 590px; }
+.appeal .msg .required { font-size: 16px; }
+.appeal .msg .select { width: 142px; height: 36px; border: 1px solid #dddddd; }
+.appeal .msg .input { width: 217px; height: 32px; border: 0; border-bottom: 1px solid #CFCFCF; font-size: 14px; padding-left: 7px; font-family: 微软雅黑,宋体; background-color: transparent; }
+.appeal .msg textarea { width: 365px; max-width: 365px; height: 140px; max-height: 140px; font-family: 微软雅黑; color: #000; }
+.appeal .rows { margin: 10px auto; }
+.appeal .rows .lblock { font-size: 14px; width: 110px; display: inline-block; margin-top: 5px;  }
+.appeal .msg .tips { font-size: 14px; }
+.appeal .msg .file_tip { display: inline-block; font-size: 14px; }
+.appeal .msg .notice { margin-left: 10px; height: 25px; display: inline-block; }
+.appeal .msg .detailsDiv .notice { top: -120px; position: relative; }
+.appeal .msg .notice i { display: inline-block; width: 16px; height: 16px; position: relative; top: 4px; margin-right: 5px; }
+.appeal .msg .notice.succ { color: green; }
+.appeal .msg .notice.err { color: red; }
+.appeal .msg .notice.succ i { background: url('../../../img/true.jpg'); }
+.appeal .msg .notice.err i { background: url('../../../img/false.jpg'); }
+/*申诉信息*/
+.freeze .freeze-body.appealInfo { margin-top: 20px; border-style: dashed;  }
+.freeze .freeze-body.appealInfo .title { border-bottom: 1px dashed #e4e4e4; padding: 5px 20px 10px 0; }
+.freeze .appealInfo .status { padding: 10px 0; }
+.freeze .appealInfo .status span { margin-right: 25px; }
+.freeze .appealInfo .tips { border-bottom: 1px dashed #e4e4e4; margin-bottom: 20px; font-size: 12px; }
+.freeze .appealInfo .tips .head { font-size: 14px; margin: 20px auto 10px; font-size: 16px; font-weight: bold; margin-bottom: 16px; }
+.freeze .appealInfo .tips .item { font-weight: bold; display: inline-block; width: 100px; }
+.freeze .appealInfo .tips .line img { margin-right: 10px; }
+.freeze .appealInfo .tips .line .imgDiv { width: 600px; }
+
+
+.appeal .rows.filerow { margin-top: 15px; }
+.appeal .rows .file-btn { background: url('../../../img/css-spirits-24.png'); _background: url('../../../img/css-spirits-8.png'); background-position: -10px -372px; width: 106px; height: 35px; }
+.appeal .rows .filerow .lblock { margin-top: 0px;  }
+.appeal .filerow button.file-btn { margin-top: 0px;  margin-left: 0; color: #333333; outline: none; cursor: pointer; }
+.appeal .DlgHide { position: absolute; left: -9999px; }
+
+
+.uploadify { margin-bottom: 0; }
+.uploadify-queue { margin-bottom: 2px; zoom: 1; overflow: hidden; }
+.uploadify-button { -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; background-image: none; border: 0px solid #CCC; background-color: transparent; }
+.uploadify:hover .uploadify-button { background-color: transparent; }
+.uploadify-queue-item .cancel a { background: url('../../../../uploadify/uploadify-cancel.png') 0 0 no-repeat; }
+.uploadify-queue-item {float: left; margin-right: 10px; width: 253px; }
+.uploadify-queue .uploadify-queue-item .fileName {width: 155px; display: inline-block; overflow: hidden; height: 15px;}
+
+/*渠道经理申诉管理*/
+#reply .top-tips { font-size: 14px; padding-right: 35px; }
+#reply { width: 660px; }
+#reply .details { height: 140px; width: 302px; }
+#reply.dlg { left: -9999px; }
+.shade { display: none; }
+#reply.appeal .msg .notice.err .txt{ font-size: 12px; }
+#reply.appeal .msg { width: 530px; }
+#reply .rows .lblock { width: 75px; }
+#reply .dlg-confirm:hover { background-color: #e5bb00 !important; }
+
+.dlg .dlg-body { text-align: center; padding: 17px 0; }
+#reply.dlg .dlg-body { text-align: left; padding: 10px;  }
+
+table tr td{ padding: 8px 0; }
+table tr.hl { background-color: #FFF1B3; }
+table tr .pagination { padding: 10px 0; }
+table .appeal_list .pagination { padding: 0; }
+
+.pagination .page-list a, .pagination .page-list span { display: inline-block; padding: 2px 4px; }
+
+.appeal_item_div { padding-top: 4px; }
+.appeal_item_div label { margin-right: 10px; position: relative; top: -2px; cursor: pointer; }
+
+.over_tips { color: rgb(255, 34, 34); margin-left: 8px; }

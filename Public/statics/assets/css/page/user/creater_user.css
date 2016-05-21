@@ -1,0 +1,177 @@
+*{margin:0;padding:0};
+ol, ul, a {list-style: none;}
+body{font: 16px/1 Tahoma,STHeiti,"Microsoft YaHei",Helvetica,Verdana,sans-serif;color: #333;background: #f9f9f9;}
+a,input,textarea{outline:none;}
+textarea {resize: none;}
+a{text-decoration:none}
+select, input[type='text'] { padding-left: 10px; font-size: 16px; font-family: "Microsoft YaHei"; border: 1px solid #ddd;}
+.header
+{
+	height: 70px;
+	width: 100%;
+	background: #fff;
+	border-bottom: 1px solid #efefef;
+}
+
+.container
+{
+	width: 960px;
+	height: 100%;
+	margin:0 auto;
+}
+
+.logo{margin:10px 0 0 35px; float: left;}
+.registerBaiduId{float: right; margin:20px 140px 0 0;}
+.registerButton{width: 60px;height: 30px;font-size: 14px; border: 0; background: #f0f0f0; cursor: pointer; color: black;display: inline-block; text-align: center; line-height: 30px;}
+
+.regContainer
+{
+	border:1px #efefef solid;
+	margin-top:45px;
+	background: #fff;
+}
+
+.regContainer .regForm { padding-left: 130px; padding-top: 30px; }
+.curBaiduId
+{
+	margin:20px 0 0 35px;
+}
+.singleSpace
+{
+	margin-top: 20px;
+}
+.note
+{
+	margin-right: 15px;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	vertical-align:middle;
+	display: inline-block;
+	width:110px;
+	text-align: right;
+}
+
+.redText
+{
+	color: red;
+}
+.joinInput
+{
+	width: 300px;
+	height: 40px;
+	line-height: 18px;
+	line-height: 40px\9;
+	vertical-align:middle;
+	font-size: 18px;
+
+}
+
+.judgeIcon
+{
+	display: none;
+	margin-left: 10px;
+	width: 16px;
+	height: 16px;
+	vertical-align: text-bottom;
+}
+
+.p_and_c-c
+{
+	margin-left: 47px;
+}
+
+
+.locationSelect
+{
+	width: 130px;
+	height: 44px;
+	height: 30px\9;  /*IE7*/
+	line-height: 44px;
+	vertical-align: middle;
+}
+
+
+
+.userClassSelect
+{
+	margin: 20px 0 0 130px;
+}
+
+.introductionText
+{
+	font-size: 12px;
+	margin:20px 0 0 130px;
+}
+
+.getProofCode
+{
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	width: 110px;
+	color: white;
+	border:0;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.submitButton
+{
+	height: 50px;
+	width: 170px;
+	background: #e5bb00;
+	color: white;
+	border:0;
+	cursor: pointer;
+	margin: 35px 0 40px 130px;
+	font-size: 16px;
+}
+
+.footer
+{
+	height: 66px;
+	width: 960px;
+	border:1px #efefef solid;
+ 	margin:0 auto;
+	background: #f5f5f5;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+.bg_gray
+{
+	background: #999;
+}
+
+.bg_yellow
+{
+	background: #e5bb00;
+}
+
+.dlgText_ul
+{
+	line-height: 180%;
+	list-style: none;
+	font-size: 15px;
+}
+.otherText
+{
+	width: 190px;
+	height: 30px;
+	line-height: 18px;
+	line-height: 30px\9;
+	vertical-align:middle;
+	font-size: 18px;
+	margin-left: 20px;
+	display: none;
+}
+
+.check_text
+{
+	color: red;
+}
+
+#showDlg .bold { font-weight: bold; }
+#showDlg .dlg-body { padding: 20px; }
+.dlgRow { margin: 15px 0; font-size: 15px;  }

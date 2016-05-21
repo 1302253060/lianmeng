@@ -1,0 +1,1 @@
+&copy;2016 第二官方 | <a href="#" target="_blank">第二官方</a> | <a href="/agreement/">用户协议</a>

@@ -1,0 +1,60 @@
+/**
+ *
+ * selectpicker自定义样式
+ *
+ */
+
+.caret{
+    position: absolute;
+    top: 16px;
+    right: 9px;
+    margin-top: -4px;
+    vertical-align: middle;
+    -webkit-backface-visibility: hidden;
+    display: inline-block;
+    *display: inline;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    content: "";
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #808b96;
+    border-bottom: none;
+    _color: #fff;
+    _font-size: 0;
+    background: transparent;
+}
+
+.btn-group{position: relative; line-height: 25px;}
+.btn-group.select{position: relative; display: inline-block; *display: inline; *zoom: 1; width: 154px; font-size: 14px; *vertical-align: middle;}
+.query-form .btn-group.select{width: 162px;}
+.btn-group.select .btn{color: #333;}
+.btn-group .dropdown-toggle{width: 100%; line-height: 16px; padding: 6px; border: 1px solid #ccc; background-color: #ffffff; outline: none; cursor: pointer;}
+.btn-group .dropdown-toggle:hover{background: #ffffff;}
+.btn-group .dropdown-toggle .filter-option{text-align: left; left: 8px; position: absolute; top: 6px; height: 18px; line-height: 18px; display: block; overflow: hidden; right: 28px; font-size: 14px; white-space: nowrap;}
+.btn-group .dropdown-menu{ display: none;}
+.open{z-index: 9;}
+.open .dropdown-menu{display: block; overflow-x: hidden; width: 99%;}
+.open .open{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 5;
+    float: left;
+    min-width: 152px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background: #ffffff;
+    background-clip: padding-box;
+}
+.btn-group .dropdown-menu li a{padding: 2px 7px; display: block; color: #333; white-space: nowrap; cursor: pointer; outline: none;}
+.btn-group .dropdown-menu li a:hover{background-color: #eee; text-decoration: none;}
+
+.checkbox{cursor: pointer; position: relative; padding-left: 18px; _zoom: 1;}
+.checkbox input{display: none;}
+.checkbox .icon{display: block; position: absolute; left: 0; top: 0; font-size: 14px; font-family: "Flat-UI-Icons"; color: #d7dcde;}
+.checkbox-checked .icon{color: #eee;}
+
+.btn-group.select.wide{width: 220px;}
+.btn-group.select.full-width{width: 100%;}
