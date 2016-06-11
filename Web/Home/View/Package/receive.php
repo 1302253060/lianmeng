@@ -26,7 +26,7 @@
                 <td><?=$iChannelId?></td>
                 <td><?=$aVal['name']?></td>
                 <td>
-                    <a href="/Home/package/download?soft_id=<?=$aVal['soft_id']?>">下载</a>
+                    <a href="<?=$aVal['url']?>">下载</a>
                 </td>
             </tr>
         <?php } ?>

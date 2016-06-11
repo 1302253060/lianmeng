@@ -30,45 +30,8 @@ class SoftModel extends Model {
         $sExt  = substr($sPackName, $i);
 
         switch ($iSoft) {
-            case 9: //暴风影音
-                $sFormatName = substr($sName, 0, strlen($sName) - 2) . '_%08d]]';
-                break;
-            case 10: //jj比赛
-                $sFormatName = $sName . '-ChildID%d-';
-                break;
-            case 11: //输入法
-                $sFormatName = $sName . '_sw-%010d';
-                break;
-            case 12: //hao123
-                $sFormatName = $sName . '&tt=%d';
-                break;
-            case 13: //wps
-                $sFormatName = $sName . ".%d";
-                break;
-            case 15: //LKGame
-                $sFormatName = $sName . "_%06d";
-                break;
-            case 16: //PPS
-                $sFormatName = $sName . "@%06d";
-                break;
-            case 18: //悠洋棋牌
-                $sFormatName = $sName . "_%07d";
-                break;
-            case 500: //风行
-                $sFormatName = $sName . "_C2%06d";
-                break;
-            case 1004: //天书世界，1000001~1300000 30w个包
-                $sFormatName = $sName . "_1%06d";
-                break;
-            case 1005: //九星天，1000001~1300000 30w个包
-                $sFormatName = $sName . "_1%06d";
-                break;
-            case 1: //卫士
-            case 2: //杀毒
-            case 6: //浏览器
-            case 132: //桌面百度
-            case 1003: //百度卫士beta版
-                $sFormatName = $sName . '_10%08d';
+            case 1011: //pps
+                $sFormatName = $sName . '_%d';
                 break;
             default:
                 $sFormatName = $sName . '_%d';

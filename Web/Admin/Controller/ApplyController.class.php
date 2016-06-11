@@ -89,13 +89,33 @@ class ApplyController extends BaseController {
         }
 
         if (in_array($aOldData['status'], array(ApplyModel::STATUS_SUCC, ApplyModel::STATUS_FAIL))) {
-            $this->fail(sprintf('该申请已经处理过'));
+            $this->fail('该申请已经处理过');
             goto END;
         }
         if ($status == 0) {
             $this->fail('请填写状态');
             goto END;
         }
+        $iUserID = (int)$aOldData['user_id'];
+        $aSoftCount = M("channel_soft")->field("soft_id, count(1) as total")->where(array('soft_id' => array('IN', $aSoft), 'user_id' => '0', 'channel_id' => '0', 'status' => 0))->group("soft_id")->select();
+        $aSoftCount = Arr::changeIndexToKVMap($aSoftCount, 'soft_id', 'total');
+        foreach ($aSoft as $iSoftID) {
+            if (!isset($aSoftCount[$iSoftID])) {
+                $this->fail('软件数量不够');
+                goto END;
+            }
+            if ($iNum > $aSoftCount[$iSoftID]) {
+                $this->fail('软件数量不够');
+                goto END;
+            }
+        }
+
+        for ($i = 0; $i < $iNum; $i++) {
+            $aInsert   = array('parent_id' => $iUserID, 'level' => UserModel::LEVEL_TWO, 'create_time' => date('Y-m-d H:i:s'));
+            $iInsertID = M("user")->add($aInsert);
+            M("channel_soft")->where(array('soft_id' => array('IN', $aSoft), 'user_id' => '0', 'channel_id' => '0', 'status' => 0))->save(array('status' => 1, 'user_id' => $iUserID, 'channel_id' => $iInsertID));
+        }
+
 
         $Model->soft   = implode(",", $aSoft);
         $Model->status = I('post.status');

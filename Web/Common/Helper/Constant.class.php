@@ -33,7 +33,7 @@ class Constant
     const DB_POINT_FLOW_SUB_ORDER   = -1;
 
 
-    const CDN_URL    = 'http://dlsw.br.baidu.com/ditui/'; #CDN url
+    const CDN_URL    = 'http://download.d2gf.com/'; #CDN url
     const IMAGE_URL  = 'http://lianmeng.com/'; #CDN url
     const UPLOAD_DIR = './Public/Uploads/'; #CDN url
 

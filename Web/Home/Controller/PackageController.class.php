@@ -6,6 +6,7 @@ use Admin\Model\ApplyModel;
 use Admin\Model\SoftModel;
 use Admin\Model\UserModel;
 use Common\Helper\Arr;
+use Common\Helper\Constant;
 
 class PackageController extends BaseController {
 
@@ -165,7 +166,7 @@ class PackageController extends BaseController {
             $this->fail("该渠道不存在");
             return;
         }
-        $aChannelSoft = M("channel_soft")->where(array('user_id' => $User->id, 'channel_id' => $iChannelId))->select();
+        $aChannelSoft = M("channel_soft")->where(array('user_id' => $User->id, 'channel_id' => $iChannelId, 'status' => '1'))->select();
         $aData = array();
         $aSoft = SoftModel::getAllSoft();
         if (!empty($aChannelSoft)) foreach ($aChannelSoft as $aVal) {
@@ -175,7 +176,17 @@ class PackageController extends BaseController {
             $aData[] = array(
                 'soft_id' => $aVal['soft_id'],
                 'name'    => $aSoft[$aVal['soft_id']]['name'],
+                'url'     => $aVal['download_url'],
             );
+        }
+        foreach ($aSoft as $aSoftVal) {
+            if ($aSoftVal['id'] == '1011') {
+                $aData[] = array(
+                    'soft_id' => $aSoftVal['id'],
+                    'name'    => $aSoftVal['name'],
+                    'url'     => Constant::CDN_URL . SoftModel::generateDownloadName($aSoftVal['package'], $aSoftVal['id'], $iChannelId),
+                );
+            }
         }
 
         $this->assign("aData", $aData);
