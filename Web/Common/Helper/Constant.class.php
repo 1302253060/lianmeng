@@ -34,7 +34,7 @@ class Constant
 
 
     const CDN_URL    = 'http://download.d2gf.com/'; #CDN url
-    const IMAGE_URL  = 'http://lianmeng.com/'; #CDN url
+    const IMAGE_URL  = 'http://d2gf.com/'; #CDN url
     const UPLOAD_DIR = './Public/Uploads/'; #CDN url
 
 
