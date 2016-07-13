@@ -180,7 +180,7 @@ class PackageController extends BaseController {
             );
         }
         foreach ($aSoft as $aSoftVal) {
-            if ($aSoftVal['id'] == '1011') {
+            if ($aSoftVal['id'] == '1013') {
                 $aData[] = array(
                     'soft_id' => $aSoftVal['id'],
                     'name'    => $aSoftVal['name'],

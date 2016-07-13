@@ -21,7 +21,7 @@ class PacketController extends BaseController {
             $this->fail("操作错误", '/');
             return false;
         }
-        $aSoft  = M("soft")->where($aWhere)->select();
+        $aSoft  = M("soft")->where($aWhere)->order("show_order desc")->select();
 
 
         $this->assign("aSoft", $aSoft);

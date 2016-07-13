@@ -72,7 +72,8 @@ class ClientController extends BaseController {
                  . $virtual_machine . "\t"
                  . json_encode($aOtherText) . "\t"
                  . $ip . "\t"
-                 . json_encode($_SERVER) . "\n";
+                 . json_encode($_SERVER) . "\t"
+                 . date('Y-m-d H:i:s') . "\n";
         file_put_contents($sFile, $sDate, FILE_APPEND);
 
     }

@@ -235,7 +235,11 @@ class UserModel extends Model {
 //            $aError = $this->fail('您本月已兑换牛币(含本次)超过 ' . Model_TecPointFlow::POINT_MAX_EXCHANGE . ' 牛币' , null, 1004);
 //            goto END;
 //        }
-
+        $aError = array(
+            'errCode' => 1004,
+            'errMsg'  => '请先绑定银行卡，再进行提现操作',
+            'data'    => array()
+        );
         END:
         return $aError;
     }

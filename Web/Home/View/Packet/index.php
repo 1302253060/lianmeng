@@ -9,6 +9,7 @@
             <th class="soft-name">推广软件</th>
             <th class="soft-price">结算价格（100流量=1元）</th>
             <th class="soft-effect-rule" align="left">有效安装规则</th>
+            <th class="soft-operation" align="left">结算周期</th>
             <th class="soft-operation">操作</th>
         </tr>
         </thead>
